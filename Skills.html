@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: #f00909;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+    color: #f00909;
+    border-bottom: 3px solid #b74b4b;
+}
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #f00909;
+        border-bottom: 3px solid #f00909;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+    nav.active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #f00909;
+    }
+}
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4; 
+            color: #333; 
+            margin: 0;
+            padding: 0;
+        }
+        section.skills {
+            padding: 80px 0;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        section.skills h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .skill-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .skill-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-card h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #f00909;
+        }
+
+        .skill-card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            height: 8px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #4caf50;
+            transition: width 1s ease;
+        }
+
+        .python { width: 90%; }
+        .html-css { width: 85%; }
+        .english { width: 95%; }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <a href="portfolio.html"> Home</a>
+            <a href="Aboutme.html" >About me</a>
+            <a href="#" class="active">Skills</a>
+            <a href="Projects.html" >Projects</a>
+            <a href="Contact.html" >Contact</a>
+        </nav>
+    </header>
+    <section class="skills">
+        <h2>My Expertise</h2>
+        <div class="skill-container">
+            
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Advanced Python skills for backend development, data analysis, and automation.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar python"></div>
+                </div>
+            </div>
+
+           
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Advanced proficiency in HTML5 for creating structured and semantic web pages.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar html-css"></div>
+                </div>
+            </div>
+
+           
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Expert in CSS3 for responsive, modern, and accessible web design with a focus on animations.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar html-css"></div>
+                </div>
+            </div>
+
+           
+            <div class="skill-card english-centered">
+                <h3>English</h3>
+                <p>Fluent in English with advanced reading, writing, and communication skills.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar english"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</html>

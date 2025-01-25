@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: whitesmoke;
+            color: white;
+        }
+        header{
+            margin-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            filter: drop-shadow(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo{
+            font-size: 3rem;
+            color: #f00909;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        .logo:hover{
+            transform: scale(1.1);
+        }
+        nav a{
+            font-size: 1.8rem;
+            color: black;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav a:hover,
+        nav a.active{
+            color: #f00909;
+            border-bottom: 3px solid #b74b4b;
+        }
+        @media(max-width:995px){
+            nav{
+                position: absolute;
+                display: none;
+                top: 0;
+                right: 0;
+                width: 40%;
+                border-left: 3px solid #f00909;
+                border-bottom: 3px solid #f00909;
+                border-bottom-left-radius: 2rem;
+                padding: 1rem solid;
+                background-color: #161616;
+                border-top: 0.1rem solid rgba(0,0,0,0.1);
+            }
+            nav.active{
+                display: block;
+            }
+            nav a{
+                display: block;
+                font-size: 2rem;
+                margin: 3rem 0;
+            }
+            nav a:hover,
+            nav a.active{
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-bottom: 0.5rem solid #f00909;
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+        }
+        .aa{
+            margin-top: 150px;
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .intro {
+            background-color: #e45a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .intro h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+        }
+        .bio {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+      
+
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 5%;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            nav a {
+                font-size: 1.5rem;
+                margin-left: 2rem;
+            }
+
+            .aa {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            .intro h1 {
+                font-size: 2rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+            }
+
+            .bio h2 {
+                font-size: 1.6rem;
+            }
+
+            .bio p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem 2%;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1.3rem;
+                margin-left: 1.5rem;
+            }
+
+            .intro h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro p {
+                font-size: 0.9rem;
+            }
+
+            .bio h2 {
+                font-size: 1.4rem;
+            }
+
+            .bio p {
+                font-size: 0.9rem;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav>
+            <a href="portfolio.html"> Home</a>
+            <a href="#" class="active">About me</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html" >Projects</a>
+            <a href="Contact.html" >Contact</a>
+        </nav>
+    </header>
+    <div class="aa">
+    <section class="intro">
+        <h1>About Me</h1>
+        <p>I am a Digital Developer</p>
+    </section>
+
+    <section class="bio">
+        <h2>Who Am I?</h2>
+        <p>Hello! I'm Safouane Rady, a passionate Digital Developer and I'm 23 years old. I'm studying at CMC Agadir, where I'm pursuing my education in digital development. I have a strong interest in web development and technology, and I'm continually learning and growing my skills in areas such as HTML, CSS, Bootstrap, and Python.</p>
+        <p>In addition to my studies, I enjoy exploring new technologies, experimenting with different programming languages, and working on personal projects that help me improve my coding abilities. Outside of development, I have a variety of hobbies that keep me balanced and inspired, such as reading, fitness, etc.</p>
+        <p>I'm excited about the future of web development and look forward to applying my skills in real-world projects. As I continue my education at CMC Agadir, I'm eager to collaborate, learn from others, and grow into a well-rounded Digital Developer.</p>
+    </section>
+    </div>
+
+</body>
+</html>
